@@ -1,120 +1,52 @@
 #include <iostream>
+
 using namespace std;
-int main(){
-//1
-/*
-int a;
-int b;
 
-cout<<"insira o primeiro numero"<<endl;
-cin>>a;
-cout<<"insira o segundo numero"<<endl;
-cin>>b;
+int main() {
+    /*string matriz[4][2]; 
 
-if(a>b){
-cout<<a<<endl;
+    for (int l = 0; l < 4; l++) {  
+        cout << "Digite o NOME do funcionario " << l+1 << ": ";
+        cin >> matriz[l][0]; 
+        cout << "Digite o SALARIO do funcionario " << l+1 << ": ";
+        cin >> matriz[l][1]; 
+
+        cout << endl;
+    }*/
+    
+     //salario minimo 2025 R$ 1.518,00
+    float salario, minimo, resultado;
+    
+    cout<<"digite o valotr do salario minimo: ";
+
+    minimo = 1518.00;
+    cout<<"digite o salario do funcionario LUCAS: ";
+    cin>>salario;
+
+    
+   if(salario <= minimo * 3){
+    cout << "parabens, voce teve 50 porcento de aumento de salario!!" << endl;
+    cout << "salario antigo: " << salario << endl;
+    cout << "Valor da porcentagem: " << (resultado = salario * 0.5) << endl;
+    cout << "salario + aumento: " << salario + resultado << endl;
 }
-else if(a==b){
-cout<<"Os numeros sao equivalentes"<<endl;
-}
-else{
-cout<<b<<endl;
-}
-*/
-
-
-
-
-
-
-
-
-//2
-/*int a;
-int b;
-
-cout<<"insira o primeiro numero"<<endl;
-cin>>a;
-cout<<"insira o segundo numero"<<endl;
-cin>>b;
-
-if(a>b){
-cout<<"o Primeiro numero eh maior"<<endl;
-}
-else if(a==b){
-cout<<"Os numeros sao equivalentes"<<endl;
-}
-else{
-cout<<"o Segundo numero eh maior"<<endl;
-}
-*/
-
-//3
-/*int a;
-
-
-cout<<"insira o numero"<<endl;
-cin>>a;
-
-if(a%2==0){
-cout<<"o numero eh par"<<endl;
-}
-
-else{
-cout<<"o numero eh impar"<<endl;
-}
-*/
-
-//4
-/*int a;
-cout<<"insira o  numero"<<endl;
-cin>>a;
-
-
-if(a>80){
-cout<<"o numero eh maior que 80"<<endl;
-}
-else if(a==40){
-cout<<"O numeros é igual a 40"<<endl;
-}
-else if(a<25){
-    cout<<"o numero é menor que 25"<<endl;
-
-}
-else {
-cout<<"o numero nao se encaixa nos requisitos"<<endl; 
-}
-*/
-
-//5
-/*string a;
-cout<<"insira a senha correta"<<endl;
-cin>>a;
-
-if(a=="batata frita"){
-  cout<<"senha correta"<<endl; 
-}
-else{
-cout<<"senha incorreta"<<endl; 
-}
-*/
-
-//4
-int a;
-int b;
-int c;
-
-cout<<"insira o primeiro numero"<<endl;
-cin>>a;
-cout<<"insira o segundo numero"<<endl;
-cin>>b;
-cout<<"insira o terceiro numero"<<endl;
-cin>>c;
-
-if((a<b)&&(b<c)){
-cout<<a<<b<<c<<endl;
-}
-else if((c<b)&&(b<)&&())
-
-
+    else if((salario>minimo *3) &&  (salario<=minimo * 10)){
+    cout << "parabens, voce teve 20 porcento de aumento de salario!!" << endl;
+    cout << "salario antigo: " << salario << endl;
+    cout << "Valor da porcentagem: " << (resultado = salario * 0.2) << endl;
+    cout << "salario + aumento: " << salario + resultado << endl;
+  }
+    else if((salario>minimo *10) &&  (salario<=minimo * 20)){
+    cout << "parabens, voce teve 15 porcento de aumento de salario!!" << endl;
+    cout << "salario antigo: " << salario << endl;
+    cout << "Valor da porcentagem: " << (resultado = salario * 0.15) << endl;
+    cout << "salario + aumento: " << salario + resultado << endl; 
+  }
+    else{
+    cout << "parabens, voce teve 10 porcento de aumento de salario!!" << endl;
+    cout << "salario antigo: " << salario << endl;
+    cout << "Valor da porcentagem: " << (resultado = salario * 0.10) << endl;
+    cout << "salario + aumento: " << salario + resultado << endl;
+    }
+    
 }
