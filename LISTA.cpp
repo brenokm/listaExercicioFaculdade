@@ -253,15 +253,66 @@ int main() {
 menor que R$ 20,00; caso contrário, o lucro será de 30%. Elabore um algoritmo que leia o valor do
 produto e imprima o valor de venda para o produto.
 
+#include <iostream>
+using namespace std;
+
+int comparacao(int y) {
+    if (y >= 20) {
+        return y* 0.45; 
+    } else {
+        return y* 0.30; 
+    }
+}
+
+int main() {
+    int produto;
+    cout << "Preco do produto: ";
+    cin >> produto;
+    int venda= comparacao(produto);
+    cout << "O valor de venda eh R$ " << venda+ produto << endl;
+
+}
 
 
-9) A concessionária de veículos “CARANGO VELHO” está vendendo os seus veículos com desconto.
+
+********************9) A concessionária de veículos “CARANGO VELHO” está vendendo os seus veículos com desconto.
 Faça um algoritmo que calcule e exiba o valor do desconto e o valor a ser pago pelo cliente. O
 desconto deverá ser calculado de acordo com o ano do veículo. Até 2000 - 12% e acima de 2000 - 7%.
 
+
+
+
+
+
+
+
+
+
 10) Faça um algoritmo que receba um número e diga se este número está no intervalo entre 100 e 200.
 
-11) O Botafogo Futebol Clube deseja aumentar o salário de seus jogadores. O reajuste deve obedecer a
+
+#include <iostream>
+using namespace std;
+
+string comparacao(int y) {
+    if (y>99&&y<201) {
+        return "o numero "+ to_string(y)+ " esta entre 100 e 200"; 
+    } else {
+        return "o numero "+ to_string(y)+" nao esta entre 100 e 200";
+    }
+}
+
+int main() {
+
+    int numero;
+   cout<<"insira o numero: ";
+   cin>>numero;
+
+   string verific = comparacao (numero);
+   cout << verific << endl;
+}
+
+***********11) O Botafogo Futebol Clube deseja aumentar o salário de seus jogadores. O reajuste deve obedecer a
 seguinte tabela:
 
 SALÁRIO ATUAL (R$)      AUMENTO
@@ -273,7 +324,7 @@ Escrever um algoritmo que leia o nome e o salário atual de um jogador, e exiba 
 salário reajustado.
 
 
-12) Faça um algoritmo para calcular a conta final de um hóspede de um hotel fictício,
+**************12) Faça um algoritmo para calcular a conta final de um hóspede de um hotel fictício,
 considerando que:
 ▪ Serão lidos o nome do hóspede, o tipo do apartamento utilizado (A, B, C ou D), o número de diárias
 utilizadas pelo hóspede e o valor do consumo interno do hóspede;
