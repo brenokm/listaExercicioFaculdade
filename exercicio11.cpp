@@ -1,6 +1,15 @@
 #include <iostream>
 using namespace std;
+/*O Botafogo Futebol Clube deseja aumentar o salário de seus jogadores. O reajuste deve obedecer a
+seguinte tabela:
+________________________________
+|SALÁRIO ATUAL (R$)    |AUMENTO|
+|0,00 a 5.000,00       |20%    |
+|5.000,01 a 15.000,00  |10%    |
+|acima de 15.000,00    |0%     |
 
+Escrever um algoritmo que leia o nome e o salário atual de um jogador, e exiba o nome, o salário atual e o
+salário reajustado.*/
 float calculo(float y)
 {
   if (y >= 0.0 && y <= 5000.00)

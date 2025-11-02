@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
-
+/*A concessionária de veículos “CARANGO VELHO” está vendendo os seus veículos com desconto.
+Faça um algoritmo que calcule e exiba o valor do desconto e o valor a ser pago pelo cliente. O
+desconto deverá ser calculado de acordo com o ano do veículo. Até 2000 - 12% e acima de 2000 - 7%.*/
 float coragem(float y) {
     if(y>=2000){
       return y*0.12;
@@ -17,7 +19,7 @@ int main() {
     int escolha;
     cout<<"-----CARANGO VELHO-----"<<endl;
     cout<<"1-Peugeot 307"<<endl;
-    cout<<"2-Chevetao"<<endl;
+    cout<<"2-Chevette"<<endl;
     cout<<"3-Corsa"<<endl;
     cout<<"4-Fiat Marea"<<endl;
     cout<<"-----CARANGO VELHO-----"<<endl;

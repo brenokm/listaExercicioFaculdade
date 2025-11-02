@@ -1,28 +1,24 @@
 #include <iostream>
 using namespace std;
-
-bool comparacao(string x){
-  return(x == "batata frita")?false:true;
-
-  //return(x == "batata frita")?true:false;
-  //assim retorna false
-  //return(x == "batata frita")?false:true;
-  //assim retorna true(??????)
+//Elabore um algoritmo para testar se uma senha digita é igual a “batata frita”. Se a senha estiver correta escreva “Acesso permitido”, do contrário emita a mensagem “Você não tem acesso ao sistema”.
+string comparacao(string x){
+  if(x =="batata frita"){
+   return "Acesso permitido";
+  }
+  else{
+  return "Voce nao tem acesso ao sistema";
+  }
 }
 
 int main() {
 string a;
 
 cout<<"Digite a senha: ";
-cin>>a;
+getline(cin, a);
+// "cin>>" só salva a primeira palavra
 
-bool senha = comparacao(a);
+string senha = comparacao(a);
 
-if(senha){
-  cout<<"Acesso permitido"<<endl;
-}
-else{
-  cout<<"Acesso negado"<<endl;
-}
+cout<<senha;
 
 }

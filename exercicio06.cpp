@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+//Escrever um algoritmo que leia três valores inteiros distintos e os escreva em ordem crescente.
 string ordenar(int a, int b, int c) {
     int menor, meio, maior;
 
@@ -29,7 +29,7 @@ string ordenar(int a, int b, int c) {
 
 int main() {
     int a, b, c;
-    cout<< "Digite tres numeros diferentes: "<<endl;
+    cout<< "Digite tres numeros diferentes: ";
     cin>> a;
     cin>> b; 
     cin>> c;

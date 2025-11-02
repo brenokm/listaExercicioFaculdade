@@ -1,4 +1,5 @@
 #include <iostream>
+//Escreva um algoritmo para ler um número inteiro e retornar se ele é maior, igual ou menor que zero.
 using namespace std;
 bool comparacao(int x) {
     if (x == 0)

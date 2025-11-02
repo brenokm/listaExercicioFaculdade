@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+//Faça um algoritmo que receba um número e diga se este número está no intervalo entre 100 e 200.
 string comparacao(int y) {
     if (y>99&&y<201) {
         return "o numero "+ to_string(y)+ " esta entre 100 e 200"; 

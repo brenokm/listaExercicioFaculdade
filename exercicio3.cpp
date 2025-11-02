@@ -1,4 +1,5 @@
 #include <iostream>
+//Faça um algoritmo que leia um número inteiro e retorne se o número é par o ímpar.
 using namespace std;
 int comparacao(int x) {
     if (x % 2 > 0){

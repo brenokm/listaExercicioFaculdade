@@ -1,5 +1,11 @@
 #include <iostream>
-
+/*Escrever um algoritmo para uma empresa que decide dar um reajuste a seus funcionários de acordo
+com os seguintes critérios:
+I. 50% para aqueles que ganham menos do que três salários mínimos;
+II. 20% para aqueles que ganham entre três até dez salários mínimos;
+III. 15% para aqueles que ganham acima de dez até vinte salários mínimos;
+IV. 10% para os demais funcionários.
+Obs: Leia o valor do salário mínimo e imprima os valores dos reajustes obedecendo os critérios*/
 using namespace std;
 
 int main() {

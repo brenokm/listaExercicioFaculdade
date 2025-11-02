@@ -1,4 +1,5 @@
 #include <iostream>
+//Escreva um algoritmo que leia dois números e exiba o maior deles.
 using namespace std;
 int comparacao(int x, int y) {
     if (x > y){
