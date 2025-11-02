@@ -1,88 +1,3 @@
-/*1) Escreva um algoritmo que leia dois números e exiba o maior deles.
-#include <iostream>
-using namespace std;
-int comparacao(int x, int y) {
-    if (x > y){
-        return x;
-    }        
-}
-int main() {
-    int a, b;
-
-    cout << "Insira o primeiro numero: ";
-    cin >> a;
-
-    cout << "Insira o segundo numero: ";
-    cin >> b;
-
-    int maior = comparacao(a, b);
-
-    if (a == b){
-        cout << "Os numeros sao equivalentes." << endl;
-    }    
-    else{
-        cout << "O maior numero eh: " << maior << endl;
-    }
-    return 0;
-}
-
-2) Escreva um algoritmo para ler um número inteiro e retornar se ele é maior, igual ou menor que zero.
-#include <iostream>
-using namespace std;
-bool comparacao(int x) {
-    if (x == 0)
-        return true;
-    else
-        return false;
-}
-int main() {
-    int a, b;
-
-    cout << "Insira o numero: ";
-    cin >> a;
-
-    int maior = comparacao(a);
-
-    if (maior == 1){
-        cout << "O numero eh igual a 0" << endl;
-    }    
-    
-    else{
-      if (a>0)
-      {
-         cout << "O numeros eh maior que 0" << endl;
-      }
-      else{
-      cout << "O numeros eh menor que 0" << endl;
-      }
-      
-    }
- 
-}
-3) Faça um algoritmo que leia um número inteiro e retorne se o número é par o ímpar.
-
-#include <iostream>
-using namespace std;
-int comparacao(int x) {
-    if (x % 2 > 0){
-        return x;
-    }      
-}
-int main() {
-    int a, b;
-
-    cout << "Insira o numero: ";
-    cin >> a;
-
-    int maior = comparacao(a);
-
-    if (maior == 0){
-        cout << "O numero eh par" << endl;
-    }    
-    else{
-        cout << "O numero eh impar" << endl;
-    }
-}
 
 
 4) Faça um algoritmo que receba um número e mostre uma mensagem caso este número seja maior que
@@ -275,9 +190,7 @@ int main() {
 
 
 
-********************9) A concessionária de veículos “CARANGO VELHO” está vendendo os seus veículos com desconto.
-Faça um algoritmo que calcule e exiba o valor do desconto e o valor a ser pago pelo cliente. O
-desconto deverá ser calculado de acordo com o ano do veículo. Até 2000 - 12% e acima de 2000 - 7%.
+
 
 
 
@@ -289,8 +202,6 @@ desconto deverá ser calculado de acordo com o ano do veículo. Até 2000 - 12% 
 
 
 10) Faça um algoritmo que receba um número e diga se este número está no intervalo entre 100 e 200.
-
-
 #include <iostream>
 using namespace std;
 
@@ -312,6 +223,164 @@ int main() {
    cout << verific << endl;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+********************9) A concessionária de veículos “CARANGO VELHO” está vendendo os seus veículos com desconto.
+Faça um algoritmo que calcule e exiba o valor do desconto e o valor a ser pago pelo cliente. O
+desconto deverá ser calculado de acordo com o ano do veículo. Até 2000 - 12% e acima de 2000 - 7%.
+
+#include <iostream>
+using namespace std;
+
+float coragem(float y) {
+    if(y>=2000){
+      return y*0.12;
+    }
+    else{
+     return y*0.07;
+    }
+}
+
+int main() {
+    
+
+    float entrada,PEUGEOT= 19000.00,CHEVETAO = 5000.00, CORSA = 11514.00,MAREA =15000.00;
+    int escolha;
+    cout<<"-----CARANGO VELHO-----"<<endl;
+    cout<<"1-Peugeot 307"<<endl;
+    cout<<"2-Chevetao"<<endl;
+    cout<<"3-Corsa"<<endl;
+    cout<<"4-Fiat Marea"<<endl;
+    cout<<"-----CARANGO VELHO-----"<<endl;
+    cout<<"Escolha: "<<endl; 
+    cin>>escolha;
+     
+    switch (escolha)
+    {
+    case 1:{
+    cout<<"Peugeot"<<endl;
+    cout<<"Preco R$19.000."<<endl;
+    cout<<"Infome o valor de entrada: ";
+    cin>>entrada;
+
+    float desconto = coragem(entrada);
+
+    if (entrada>=2000){
+      cout<<"Voce teve 12 porcento de desconto!!!"<<endl;
+      cout <<"Valor do desconto: R$ " << desconto << endl;
+      cout<<"Preco restante: "<< PEUGEOT-desconto;      
+    }
+    else{
+      cout<<"Voce teve 7 porcento de desconto!!!"<<endl;
+      cout<<desconto<<endl;
+      cout<<"Preco restante: "<< PEUGEOT-desconto;        
+    }
+
+  }break;
+
+
+
+
+   case 2:{
+   
+    cout<<"Chevette"<<endl;
+    cout<<"Preco R$: "<<CHEVETAO<<endl;
+    cout<<"Infome o valor de entrada: ";
+    cin>>entrada;
+
+    float desconto = coragem(entrada);
+
+    if (entrada>=2000){
+      cout<<"Voce teve 12 porcento de desconto!!!"<<endl;
+      cout <<"Valor do desconto: R$ " << desconto << endl;
+      cout<<"Preco restante: "<< CHEVETAO-desconto;      
+    }
+    else{
+      cout<<"Voce teve 7 porcento de desconto!!!"<<endl;
+      cout<<desconto<<endl;
+      cout<<"Preco restante: "<< CHEVETAO-desconto;        
+    }
+
+    
+  }break;
+    case 3:{
+      
+    cout<<"Corsa"<<endl;
+    cout<<"Preco R$: "<<CORSA<<endl;
+    cout<<"Infome o valor de entrada: ";
+    cin>>entrada;
+
+    float desconto = coragem(entrada);
+
+    if (entrada>=2000){
+      cout<<"Voce teve 12 porcento de desconto!!!"<<endl;
+      cout <<"Valor do desconto: R$ " << desconto << endl;
+      cout<<"Preco restante: "<< CORSA-desconto;      
+    }
+    else{
+      cout<<"Voce teve 7 porcento de desconto!!!"<<endl;
+      cout<<desconto<<endl;
+      cout<<"Preco restante: "<< CORSA-desconto;        
+    }
+
+    }
+    break;
+    case 4:{
+      
+    cout<<"FIAT Marea"<<endl;
+    cout<<"Preco R$: "<<MAREA<<endl;
+    cout<<"Infome o valor de entrada: ";
+    cin>>entrada;
+
+    float desconto = coragem(entrada);
+
+    if (entrada>=2000){
+      cout<<"Voce teve 12 porcento de desconto!!!"<<endl;
+      cout <<"Valor do desconto: R$ " << desconto << endl;
+      cout<<"Preco restante: "<< MAREA-desconto;      
+    }
+    else{
+      cout<<"Voce teve 7 porcento de desconto!!!"<<endl;
+      cout<<desconto<<endl;
+      cout<<"Preco restante: "<< MAREA-desconto;        
+    }
+
+    }
+    break;
+
+
+    default:{
+    cout<<"fora do horario comercial";}
+    break;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
 ***********11) O Botafogo Futebol Clube deseja aumentar o salário de seus jogadores. O reajuste deve obedecer a
 seguinte tabela:
 
@@ -322,6 +391,58 @@ acima de 15.000,00      0%
 
 Escrever um algoritmo que leia o nome e o salário atual de um jogador, e exiba o nome, o salário atual e o
 salário reajustado.
+#include <iostream>
+using namespace std;
+
+float calculo(float y)
+{
+  if (y >= 0.0 && y <= 5000.00)
+  {
+    return y * 0.20;
+  }
+  else if (y > 5000.00 && y <= 15000.00)
+  {
+    return y * 0.10;
+  }
+  else
+  {
+    return 0.0;
+  }
+}
+
+int main()
+{
+
+  string nome;
+  float salario;
+
+  cout << "Nome do jogador: ";
+  cin >> nome;
+  cout << "Salario atual do jogador: ";
+  cin >> salario;
+
+  if (salario == 0.0)
+  {
+    cout << "salario nulo" << endl;
+  }
+  else
+  {
+
+    float reajuste = calculo(salario);
+
+    cout << "jogador: " << nome << endl;
+    cout << "salario atual: " << salario << endl;
+    cout << "salario reajustado: " << salario + reajuste << endl;
+    if (reajuste == 0.0)
+    {
+      cout << "sem porcentagem para reajuste" << endl;
+    }
+  }
+}
+
+
+
+
 
 
 **************12) Faça um algoritmo para calcular a conta final de um hóspede de um hotel fictício,
@@ -343,4 +464,149 @@ diária;
 ▪ A total geral resulta da soma do subtotal com a taxa de serviço.
 ▪ Escreva a conta final contendo: o nome do hóspede, o tipo do apartamento, o número de diárias
 utilizadas, o valor unitário da diária, o valor total das diárias, o valor do consumo interno, o subtotal, o
-valor da taxa de serviço e o total geral.*/
+valor da taxa de serviço e o total geral.
+
+
+#include <iostream>
+using namespace std;
+
+class despesas
+{
+public:
+  float calcular(float x)
+  {
+    return x * 0.10;
+  }
+};
+
+int main()
+{
+  despesas obj;
+  string nome;
+  char tipo;
+  int diaria;
+  float A = 150.00, B = 100.00, C = 75.00, D = 50.00, diasHotel, interno;
+
+  cout << "Nome do Hospede: ";
+  cin >> nome;
+  cout << "Tipo de apartamento do Hospede: " << endl;
+  cout << "A - 150,00" << endl;
+  cout << "B - 100,00" << endl;
+  cout << "C - 75,00" << endl;
+  cout << "D - 50,00" << endl;
+  cout << "Escolha: ";
+  cin >> tipo;
+  cout << "Informe o número de diárias: ";
+  cin >> diaria;
+  cout << "Qual foi o valor do consumo interno?";
+  cin >> interno;
+
+  switch (tipo)
+  {
+  case 'A':
+  case 'a':
+    if (interno != 0.0)
+    {
+      
+      cout << "Nome do hospede: " << nome << endl;
+      cout << "Tipo de apartamento: A" << endl;
+      cout << "Valor do consumo interno: "<<interno<<endl;
+      diasHotel = interno+(A * diaria);
+      cout << "Valores dos dias no estabelecimento + consumo interno: " << diasHotel <<endl;
+      float taxas = obj.calcular(diasHotel);
+      cout << "Valor da taxa de servico: " << taxas << endl;
+      cout << "Valores + taxa de servico de 10%: " << diasHotel + taxas<< endl;
+    }
+    else
+    {
+      cout << "nome do hospede: " << nome << endl;
+      cout << "tipo de apartamento: B" << endl;
+      diasHotel = A * diaria;
+      cout << "Valores dos dias no estabelecimento: " << diasHotel <<endl;
+      float taxas = obj.calcular(diasHotel);
+      cout << "Valor da taxa de servico: 0" << endl;
+      cout << "Valores + taxa de servico de 10%: " << diasHotel + 0.0<< endl;
+    }
+  break;
+
+
+  case 'B':
+  case 'b':
+   if (interno != 0.0)
+    {
+      
+      cout << "Nome do hospede: " << nome << endl;
+      cout << "Tipo de apartamento: B" << endl;
+      cout << "Valor do consumo interno: "<<interno<<endl;
+      diasHotel = interno+(B * diaria);
+      cout << "Valores dos dias no estabelecimento + consumo interno: " << diasHotel <<endl;
+      float taxas = obj.calcular(diasHotel);
+      cout << "Valor da taxa de servico: " << taxas << endl;
+      cout << "Valores + taxa de servico de 10%: " << diasHotel + taxas<< endl;
+    }
+    else
+    {
+      cout << "nome do hospede: " << nome << endl;
+      cout << "tipo de apartamento: B" << endl;
+      diasHotel = B * diaria;
+      cout << "Valores dos dias no estabelecimento: " << diasHotel <<endl;
+      float taxas = obj.calcular(diasHotel);
+      cout << "Valor da taxa de servico: 0" << endl;
+      cout << "Valores + taxa de servico de 10%: " << diasHotel + 0.0<< endl;
+    }
+  break;
+  case 'C':
+  case 'c':
+ if (interno != 0.0)
+    {
+      
+      cout << "Nome do hospede: " << nome << endl;
+      cout << "Tipo de apartamento: C" << endl;
+      cout << "Valor do consumo interno: "<<interno<<endl;
+      diasHotel = interno+(C * diaria);
+      cout << "Valores dos dias no estabelecimento + consumo interno: " << diasHotel <<endl;
+      float taxas = obj.calcular(diasHotel);
+      cout << "Valor da taxa de servico: " << taxas << endl;
+      cout << "Valores + taxa de servico de 10%: " << diasHotel + taxas<< endl;
+    }
+    else
+    {
+      cout << "nome do hospede: " << nome << endl;
+      cout << "tipo de apartamento: C" << endl;
+      diasHotel = C* diaria;
+      cout << "Valores dos dias no estabelecimento: " << diasHotel <<endl;
+      float taxas = obj.calcular(diasHotel);
+      cout << "Valor da taxa de servico: 0" << endl;
+      cout << "Valores + taxa de servico de 10%: " << diasHotel + 0.0<< endl;
+    }
+    break;
+  case 'D':
+  case 'd':
+    if (interno != 0.0)
+    {
+      
+      cout << "Nome do hospede: " << nome << endl;
+      cout << "Tipo de apartamento: D" << endl;
+      cout << "Valor do consumo interno: "<<interno<<endl;
+      diasHotel = interno+(D * diaria);
+      cout << "Valores dos dias no estabelecimento + consumo interno: " << diasHotel <<endl;
+      float taxas = obj.calcular(diasHotel);
+      cout << "Valor da taxa de servico: " << taxas << endl;
+      cout << "Valores + taxa de servico de 10%: " << diasHotel + taxas<< endl;
+    }
+    else
+    {
+      cout << "nome do hospede: " << nome << endl;
+      cout << "tipo de apartamento: D" << endl;
+      diasHotel = D * diaria;
+      cout << "Valores dos dias no estabelecimento: " << diasHotel <<endl;
+      float taxas = obj.calcular(diasHotel);
+      cout << "Valor da taxa de servico: 0" << endl;
+      cout << "Valores + taxa de servico de 10%: " << diasHotel + 0.0<< endl;
+    }
+    break;
+  default:
+    cout << "Tipo inválido" << endl;
+   
+  }
+}
