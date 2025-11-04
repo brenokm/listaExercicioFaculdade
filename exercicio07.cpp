@@ -9,7 +9,7 @@ Obs: Leia o valor do salário mínimo e imprima os valores dos reajustes obedece
 using namespace std;
 
 int main() {
-    string matriz[4][2]; 
+    /*string matriz[4][2]; 
 
     for (int l = 0; l < 4; l++) {  
         cout << "Digite o NOME do funcionario " << l+1 << ": ";
@@ -21,7 +21,7 @@ int main() {
     }
     
      //salario minimo 2025 R$ 1.518,00
-    float salario, minimo, resultado;
+    float salario, minimo, resultado;*/
     
     cout<<"digite o valotr do salario minimo: ";
 
